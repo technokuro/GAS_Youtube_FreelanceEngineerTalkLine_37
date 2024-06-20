@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <p><?= param.data ?></p>
+    <form action="<?= ScriptApp.getService().getUrl() ?>" method="get">
+      問題番号：<input type="text" name="num"/><br>
+      新問題：<input type="text" name="newQuestion"/><br>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>
